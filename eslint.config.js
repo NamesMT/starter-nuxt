@@ -9,8 +9,7 @@ export default antfu(
     ],
   },
   // Include @nuxt/eslint configs
-  // @ts-expect-error withNuxt is awaitable
-  withNuxt(),
+  await withNuxt(),
   // Allow trailing space for markdown formatting
   {
     files: ['*.md'],
