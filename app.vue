@@ -1,19 +1,20 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+
+const value1 = ref()
 </script>
 
 <template>
-  <div class="h-screen flex items-center justify-center">
-    <div class="flex">
-      <div>Theme:&nbsp;</div>
-      <div
-        @click="colorMode.preference = (colorMode.preference !== 'dark')
-          ? 'dark'
-          : 'light'"
-      >
-        {{ colorMode.preference }}
-      </div>
-    </div>
+  <div class="h-screen flex items-center justify-center gap-2">
+    <div>Theme:&nbsp;</div>
+    <Button label="Test link" icon="pi pi-check" link />
+    <Button
+      :label="colorMode.preference"
+      @click="colorMode.preference = (colorMode.preference !== 'dark')
+        ? 'dark'
+        : 'light'"
+    />
+    <InputNumber v-model="value1" input-id="integeronly" placeholder="Test input" />
   </div>
 </template>
 

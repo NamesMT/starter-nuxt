@@ -1,3 +1,5 @@
+import path from 'path'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -12,11 +14,21 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     '@nuxt/image',
+    'nuxt-primevue',
   ],
 
   css: [
     '@unocss/reset/tailwind.css',
   ],
+
+  // nuxt-primevue
+  primevue: {
+    options: {
+      unstyled: true,
+      ripple: true,
+    },
+    importPT: { from: path.resolve(__dirname, './assets/primevue/presets/lara/') },
+  },
 
   features: {
     // For UnoCSS

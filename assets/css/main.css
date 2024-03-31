@@ -1,3 +1,5 @@
+@import url('./primevue.css');
+
 html {
   --at-apply: 'bg-gray-500';
 }
