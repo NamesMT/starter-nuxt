@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  devServer: {
+    https: true
+  },
+
   modules: [
     '@nuxt/eslint',
     '@unocss/nuxt',
