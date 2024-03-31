@@ -1,0 +1,7 @@
+html {
+  --at-apply: 'bg-gray-500';
+}
+
+html.dark {
+  --at-apply: 'bg-gray-700';
+}

@@ -1,7 +1,7 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/color-mode": "^3.3.3",
     "@unocss/nuxt": "^0.58.8",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
@@ -17,7 +18,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.11.6",
-    "@nuxt/eslint": "0.3.0-beta.7",
+    "@nuxt/eslint": "0.3.0-beta.8",
     "@unocss/eslint-plugin": "^0.58.8",
     "eslint": "^8.57.0",
     "unocss": "^0.58.8"

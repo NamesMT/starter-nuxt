@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@unocss/nuxt',
+    '@nuxtjs/color-mode',
   ],
 
   css: [
@@ -14,6 +15,10 @@ export default defineNuxtConfig({
   features: {
     // For UnoCSS
     inlineStyles: false,
+  },
+
+  colorMode: {
+    classSuffix: '',
   },
 
   // @nuxt/eslint
