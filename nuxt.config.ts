@@ -22,6 +22,8 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
 
+  // @nuxtjs/color-mode
+  // Removing classSuffix to match UnoCSS default selectors
   colorMode: {
     classSuffix: '',
   },
