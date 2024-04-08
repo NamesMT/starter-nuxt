@@ -24,7 +24,7 @@
     "@antfu/eslint-config": "^2.11.6",
     "@nuxt/eslint": "0.3.0-beta.8",
     "@unocss/eslint-plugin": "^0.58.8",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "nuxt-primevue": "^0.3.1",
     "unocss": "^0.58.8"
   }
