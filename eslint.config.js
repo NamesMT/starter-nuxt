@@ -1,16 +1,16 @@
+// @ts-check
 import antfu from '@antfu/eslint-config'
-import withNuxt from './.nuxt/eslint.config.mjs'
+import nuxt from './.nuxt/eslint.config.mjs'
 
-async function asyncWrap() {
-  return antfu(
+export default nuxt(
+  antfu(
+
     {
       unocss: true,
       ignores: [
         'assets/primevue/**',
       ],
     },
-    // Include @nuxt/eslint configs
-    await withNuxt(),
     // Allow trailing space for markdown formatting
     {
       files: ['*.md'],
@@ -26,7 +26,5 @@ async function asyncWrap() {
         'style/max-statements-per-line': ['error', { max: 2 }],
       },
     },
-  )
-}
-
-export default asyncWrap()
+  ),
+)
