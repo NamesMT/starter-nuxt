@@ -8,6 +8,13 @@ export default defineNuxtConfig({
     https: true
   },
 
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+
   vue: {
     propsDestructure: true,
   },
