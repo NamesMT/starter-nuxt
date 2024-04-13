@@ -5,7 +5,7 @@ export default withNuxt(antfu(
   {
     unocss: true,
     ignores: [
-      'assets/primevue/**',
+      'assets/vendor/**',
     ],
   },
   // Allow trailing space for markdown formatting
