@@ -91,7 +91,7 @@ export default defineConfig({
     pipeline: {
       include: [
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
-        "assets/primevue/presets/**",
+        "assets/vendor/primevue/presets/**",
       ],
     },
   },
