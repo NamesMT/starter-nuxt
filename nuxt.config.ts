@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     https: true
   },
 
+  vue: {
+    propsDestructure: true,
+  },
+
   modules: [
     '@nuxt/eslint',
     '@unocss/nuxt',
