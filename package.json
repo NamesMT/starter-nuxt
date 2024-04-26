@@ -10,15 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/image": "^1.6.0",
-    "primeicons": "^7.0.0",
-    "primevue": "^3.51.0",
-    "vue": "^3.4.25",
-    "vue-router": "^4.3.2"
+
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.0",
     "@nuxt/eslint": "^0.3.10",
+    "@nuxt/image": "^1.6.0",
     "@nuxtjs/color-mode": "^3.4.0",
     "@unocss/eslint-plugin": "^0.59.4",
     "@unocss/nuxt": "^0.59.4",
@@ -27,6 +24,10 @@
     "eslint": "^9.1.1",
     "nuxt": "^3.11.2",
     "nuxt-primevue": "^0.3.1",
-    "unocss": "^0.59.4"
+    "primeicons": "^7.0.0",
+    "primevue": "^3.51.0",
+    "unocss": "^0.59.4",
+    "vue": "^3.4.25",
+    "vue-router": "^4.3.2"
   }
 }
