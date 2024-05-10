@@ -12,7 +12,7 @@ import {
 export default defineConfig({
   theme: {
     ringWidth: {
-      'DEFAULT': '3px'
+      DEFAULT: '3px',
     },
     colors: {
       'primary-50': 'rgb(var(--primary-50))',
@@ -45,8 +45,8 @@ export default defineConfig({
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
   ],
   rules: [
-    // Declaring css variable with Uno: $SOMETHING=10px
-    [/^\$(.+?)=(.+)$/, ([, name, value]) => ({
+    // Declaring css variable with Uno :) -- $SOME_COLOR-[#00a000]
+    [/^\$(.+?)\-\[(.+)\]$/, ([, name, value]) => ({
       [`--${name}`]: value,
     })],
     // Re-declare to fix priority issue with some primevue components
@@ -74,6 +74,7 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       scale: 1.2,
+      cdn: 'https://esm.sh/',
     }),
     presetTypography(),
     presetWebFonts({
@@ -85,13 +86,13 @@ export default defineConfig({
   ],
   transformers: [
     transformerDirectives(),
-    transformerVariantGroup(),
+    transformerVariantGroup({ separators: [':'] }),
   ],
   content: {
     pipeline: {
       include: [
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
-        "assets/vendor/primevue/presets/**",
+        'assets/vendor/primevue/presets/**',
       ],
     },
   },
