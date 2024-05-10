@@ -17,7 +17,3 @@ const value1 = ref()
     <InputNumber v-model="value1" input-id="integeronly" placeholder="Test input" />
   </div>
 </template>
-
-<style>
-@import url("~/assets/css/main.css");
-</style>

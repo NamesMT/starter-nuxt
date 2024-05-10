@@ -1,11 +1,11 @@
-import path from 'path'
+import path from 'node:path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
   devServer: {
-    https: true
+    https: true,
   },
 
   components: [
@@ -29,6 +29,7 @@ export default defineNuxtConfig({
   ],
 
   css: [
+    '~/assets/css/main.scss',
     '@unocss/reset/tailwind.css',
   ],
 
