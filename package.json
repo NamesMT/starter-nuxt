@@ -40,5 +40,11 @@
   "dependencies": {
     "embla-carousel": "^8.0.4",
     "embla-carousel-vue": "^8.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "hasown": "npm:@nolyfill/hasown@latest",
+      "isarray": "npm:@nolyfill/isarray@latest"
+    }
   }
 }
