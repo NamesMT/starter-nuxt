@@ -1,5 +1,7 @@
 # Nuxt 3 ~~Minimal~~ Preconfigured Starter
 
+Note: the app comes with a `localcert` SSL for local development, generated with [mkcert](https://github.com/FiloSottile/mkcert), you can install mkcert's local CA to remove the untrusted SSL warning 
+
 ## Features:
 - ESLint
   - [@nuxt/eslint](https://eslint.nuxt.com/packages/module)
