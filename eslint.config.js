@@ -5,7 +5,7 @@ export default withNuxt(antfu(
   {
     unocss: true,
     ignores: [
-      'assets/vendor/**',
+      'app/assets/vendor/**',
     ],
   },
   {

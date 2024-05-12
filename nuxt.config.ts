@@ -2,6 +2,10 @@ import path from 'node:path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   devtools: { enabled: true },
 
   devServer: {
@@ -38,12 +42,12 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './lib/components/ui',
+    componentDir: './app/lib/components/ui',
   },
 
   css: [
-    '~/assets/css/main.scss',
     '@unocss/reset/tailwind.css',
+    '~/assets/css/main.scss',
   ],
 
   // nuxt-primevue
@@ -52,7 +56,7 @@ export default defineNuxtConfig({
       unstyled: true,
       ripple: true,
     },
-    importPT: { from: path.resolve(__dirname, './assets/vendor/primevue/presets/lara/') },
+    importPT: { from: path.resolve(__dirname, './app/assets/vendor/primevue/presets/lara/') },
   },
 
   features: {
