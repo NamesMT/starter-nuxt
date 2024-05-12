@@ -1,4 +1,5 @@
 import path from 'node:path'
+import { localcertKeyPath, localcertPath } from './dev/cert'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -9,7 +10,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   devServer: {
-    https: true,
+    https: {
+      cert: localcertPath,
+      key: localcertKeyPath,
+    },
     // If you have performance issue in dev, use `127.0.0.1` in your browser instead of `localhost` - Ref: https://github.com/nuxt/cli/issues/136
     host: '127.0.0.1',
     port: 3300,
