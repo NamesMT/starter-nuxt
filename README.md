@@ -1,3 +1,8 @@
+# DEPRECATED template
+Lately for my new projects I have been using the [starter-fullstack](https://github.com/NamesMT/starter-fullstack) template, I think the monorepo config of that template is structured way better and future-proof if the project grows.
+
+Maintaining this template here causes some duplicated work and to save time, I decided to deprecate it here, this template will now lives on and is maintained at [`starter-fullstack/apps/frontend`](https://github.com/NamesMT/starter-fullstack/tree/main/apps/frontend).
+
 # Nuxt 3 ~~Minimal~~ Preconfigured Starter
 
 Note: the app comes with a `localcert` SSL for local development, generated with [mkcert](https://github.com/FiloSottile/mkcert), you can install mkcert's local CA to remove the untrusted SSL warning 
